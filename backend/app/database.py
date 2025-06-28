@@ -3,7 +3,8 @@ import asyncpg
 import asyncio
 from typing import Optional, Dict, Any, List
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
+import random
 
 DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/analytics")
 
