@@ -1,0 +1,12 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "Metric Ops API", "version": "1.0.0" },
+  "paths": {
+    "/api/v1/auth/login": { "post": { "summary": "Login" } },
+    "/api/v1/work": { "get": { "summary": "List work" }, "post": { "summary": "Create work" } },
+    "/api/v1/work/{id}": { "get": { "summary": "Get work detail" } },
+    "/api/v1/work/{id}/move": { "post": { "summary": "Move stage" } },
+    "/api/v1/approval/{approval_id}/decide": { "post": { "summary": "Decide approval" } },
+    "/api/v1/summary/daily": { "get": { "summary": "Daily summary" } }
+  }
+}
